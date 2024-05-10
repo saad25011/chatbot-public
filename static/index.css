@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-image: url('../static/8c98994518b575bfd8c949e91d20548b.jpg'); /* Specify the path to your image */
+    background-repeat: repeat; /* Do not repeat the image */
+}
+.header{
+    height: 5rem;
+    width: 100%;
+    background-color: rgba(7, 14, 107, 0.979);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 20px;
+    
+}
+.header p{
+    color: white;
+   
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.header h1{
+    color: white;
+    margin-top: 0px;
+}
+
+
+.bot{
+    text-align: center;
+}
+
+
+.bot form{
+    width: 90%;
+    margin: 0 auto;
+}
+.bot form input{
+   
+    height: 8vh;
+    border-radius: 10px;
+    width: 70%;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+.bot form button{
+    width: 27%;
+    height: 8vh;
+    border-radius: 10px;
+    font-weight: 800;
+    background-color: white;
+
+}
+
+.bot ul{
+    height: 74vh;
+    
+    margin-bottom: 10px;
+}
+
+.bot ul .one{
+    font-size: x-large;
+    text-align: start;
+    margin-left: 2%;
+    list-style: none;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+.bot ul .two{
+    font-size: x-large;
+    text-align: start;
+    text-align: end;
+    list-style: none;
+    margin-bottom: 10px;
+    font-weight: 800;
+}

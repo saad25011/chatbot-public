@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Chat bot</h1>
+            <p>Caution: Limit chatbot responses to 3 to 4 words only</p>
+        </div>
+
+        <div class="bot">
+            <ul>
+                {% for todo in todos%}
+                    <li style="color: black;" class="one">{{ todo['task']}}</li>
+                    <li style="color: blue;" class="two">{{ todo['ans']}}</li>
+        
+                {% endfor %}
+            </ul>
+           
+
+
+            <form action=" {{ url_for('add')}}" method="post">
+                <input type="text" name="todo" placeholder="Ask me anything ??" autocomplete="off">
+                <button type="submit"> Send </button>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
